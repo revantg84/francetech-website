@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>France & Technology</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>France & Technology</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="history.html">History of Games</a></li>
+                <li><a href="#innovation">Innovation</a></li>
+                <li><a href="#startup">Startups</a></li>
+                <li><a href="#future">Future</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#contributions">Contributions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Introduction</h2>
+        <p>Welcome to our website, exploring France’s contributions to technology, gaming, and innovation.</p>
+    </section>
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - France & Technology</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>France & Technology</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="history.html">History of Games</a></li>
+            <li><a href="#innovation">Innovation</a></li>
+            <li><a href="#startup">Startups</a></li>
+            <li><a href="#future">Future</a></li>
+            <li><a href="#references">References</a></li>
+            <li><a href="#contributions">Contributions</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+  <section id="home">
+    <h2>Welcome to France & Technology</h2>
+    <p>
+      Discover the dynamic fusion of French heritage and cutting-edge innovation. Our website is dedicated to exploring how France has been a pioneer in technology—from the early days of video game development to today’s revolutionary startups and futuristic innovations.
+    </p>
+    
+    <h3>What You'll Find Here</h3>
+    <ul>
+      <li><strong>History:</strong> Learn about the evolution of video games in France, from its humble beginnings to its status as a global leader in gaming design.</li>
+      <li><strong>Innovation:</strong> Dive into France’s trailblazing technological breakthroughs, including iconic projects like Minitel, TGV, and advancements in AI and aerospace.</li>
+      <li><strong>Startup Culture:</strong> Explore how French IT startups like BlaBlaCar, Doctolib, and OVHcloud are reshaping the digital economy and driving the nation's economic growth.</li>
+      <li><strong>The Future:</strong> Get insights into emerging trends and future technologies that promise to transform the way we live and work.</li>
+      <li><strong>References & Contributions:</strong> Access curated resources and meet the experts and contributors who share their knowledge and passion for French technology.</li>
+    </ul>
+    
+    <p>
+      Join us on this journey through France’s remarkable contributions to technology, and see how innovation and tradition blend to create a legacy of excellence.
+    </p>
+  </section>
+  
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
